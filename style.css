@@ -1,0 +1,93 @@
+body {
+  color: #414141;
+  background-color: #EEEEEE;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+h1 {
+  text-align: center;
+  align-items: center;
+  padding: 20px 10px;
+  border: 2px solid #5D6063;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: #7FABB4
+}
+h3 {
+padding: 0 25px;
+}
+a {
+  text-decoration: none;
+}
+.about {
+  height: 160px;
+  float: left;
+  width:32%;
+}
+.Experience {
+  border-left: 2px solid #5D6063;
+  margin-left: 10px;
+  float: left;
+  width:32%;
+  height: 160px;
+}
+.Projects {
+  height: 160px;
+  border-left: 2px solid #5D6063;
+  margin-left: 10px;
+  float: left;
+  width:32%;
+}
+.Contact {
+text-align: center;
+align-content: : center;
+width: 100%;
+}
+.about_text {
+  padding: 0px 10px;
+  border: 1px dashed #7FABB4;
+  background-color: #D0D0D0;
+  text-align: justify;
+  font-style: italic;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menuitem {
+  float: left;
+}
+
+.menuitem a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.menuitem a:hover {
+  background-color: #111;
+}
+
+#button-git {
+  color: blue;
+  border: 5px solid #7FABB4;
+  padding: 20px 40px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+}
+#button-git:hover {
+  background-color: #111;
+  padding: 22px 42px;
+    border: 3px solid #7FABB4;
+}
