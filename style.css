@@ -1,93 +1,310 @@
-body {
-  color: #414141;
-  background-color: #EEEEEE;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica", "Arial", sans-serif;
-}
-h1 {
-  text-align: center;
-  align-items: center;
-  padding: 20px 10px;
-  border: 2px solid #5D6063;
-  margin-left: 200px;
-  margin-right: 200px;
-  background-color: #7FABB4
-}
-h3 {
-padding: 0 25px;
-}
-a {
-  text-decoration: none;
-}
-.about {
-  height: 160px;
-  float: left;
-  width:32%;
-}
-.Experience {
-  border-left: 2px solid #5D6063;
-  margin-left: 10px;
-  float: left;
-  width:32%;
-  height: 160px;
-}
-.Projects {
-  height: 160px;
-  border-left: 2px solid #5D6063;
-  margin-left: 10px;
-  float: left;
-  width:32%;
-}
-.Contact {
-text-align: center;
-align-content: : center;
-width: 100%;
-}
-.about_text {
-  padding: 0px 10px;
-  border: 1px dashed #7FABB4;
-  background-color: #D0D0D0;
-  text-align: justify;
-  font-style: italic;
-}
+@media only screen and (max-width: 400px) {
+  body {
+    color: #414141;
+    background-color: #EEEEEE;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
 
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+  .Header {
+    display: flex;
+    background-color: #7FABB4;
+    text-align: center;
+    justify-content: center;
+  }
 
-.menuitem {
-  float: left;
-}
 
-.menuitem a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
-/* Change the link color to #111 (black) on hover */
-.menuitem a:hover {
-  background-color: #111;
-}
+  .about {
+    margin: 0% 2%;
+    text-align: center;
 
-#button-git {
-  color: blue;
-  border: 5px solid #7FABB4;
-  padding: 20px 40px;
-  margin-top: 20px;
-  text-decoration: none;
-  color: white;
-  background-color: #333;
+  }
+  .about_text {
+    text-align: justify;
+  }
+
+  .Experience {
+      margin: 0% 2%;
+      text-align: center;
+
+  }
+  .Experience li {
+    text-align: left;
+  }
+  .Projects {
+    margin: 0% 2%;
+    text-align: center;
+
+  }
+  .Projects li {
+    text-align: left;
+  }
+  .Contact {
+    text-align: center;
+  }
+
+  .about_text {
+    font-style: italic;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .menuitem {
+
+  }
+
+  .menuitem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  .menuitem a:hover {
+    background-color: #111;
+  }
+
+  #button-git {
+    color: blue;
+    border: 5px solid #7FABB4;
+    padding: 20px 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+  }
+  #button-git:hover {
+    background-color: #111;
+    padding: 22px 42px;
+      border: 3px solid #7FABB4;
+  }
 }
-#button-git:hover {
-  background-color: #111;
-  padding: 22px 42px;
-    border: 3px solid #7FABB4;
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    color: #414141;
+    background-color: #EEEEEE;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .Header {
+    display: flex;
+    background-color: #7FABB4;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .about,
+  .Experience,
+  .Projects,
+  .Contact {
+    width: 50%;
+  }
+
+  .about {
+    width: 100%;
+  }
+  .about_text {
+    text-align: justify;
+  }
+
+  .Experience {
+      text-align: center;
+  }
+  .Experience li {
+    text-align: left;
+  }
+  .Projects {
+    text-align: center;
+    background: #D0D0D0;
+  }
+  .Projects li {
+    text-align: left;
+  }
+  .Contact {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .about_text {
+    font-style: italic;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .leftMenu {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menuitem {
+
+  }
+
+  .menuitem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  .menuitem a:hover {
+    background-color: #111;
+  }
+
+  #button-git {
+    color: blue;
+    border: 5px solid #7FABB4;
+    padding: 20px 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+  }
+  #button-git:hover {
+    background-color: #111;
+    padding: 22px 42px;
+      border: 3px solid #7FABB4;
+  }
+}
+@media only screen and (min-width: 961px) {
+  body {
+    color: #414141;
+    background-color: #EEEEEE;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .Header {
+    display: flex;
+    background-color: #7FABB4;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .mainContent {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about {
+    margin: 0% 2%;
+    flex: 1;
+  }
+  .about_text {
+    text-align: justify;
+  }
+
+  .Experience {
+      margin: 0% 2%;
+      text-align: center;
+      flex: 1;
+  }
+  .Experience li {
+    text-align: left;
+  }
+  .Projects {
+    margin: 0% 2%;
+    text-align: center;
+    background: #D0D0D0;
+    flex: 1;
+  }
+  .Projects li {
+    text-align: left;
+  }
+  .Contact {
+    text-align: center;
+  }
+
+  .about_text {
+    font-style: italic;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .leftMenu {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menuitem {
+
+  }
+
+  .menuitem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  .menuitem a:hover {
+    background-color: #111;
+  }
+
+  #button-git {
+    color: blue;
+    border: 5px solid #7FABB4;
+    padding: 20px 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+  }
+  #button-git:hover {
+    background-color: #111;
+    padding: 22px 42px;
+      border: 3px solid #7FABB4;
+  }
 }
