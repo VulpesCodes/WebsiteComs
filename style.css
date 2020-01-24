@@ -1,4 +1,4 @@
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
   body {
     color: #414141;
     background-color: #EEEEEE;
@@ -95,7 +95,7 @@
       border: 3px solid #7FABB4;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media (min-width: 401px) and (max-width: 960px) {
   body {
     color: #414141;
     background-color: #EEEEEE;
@@ -204,7 +204,7 @@
       border: 3px solid #7FABB4;
   }
 }
-@media only screen and (min-width: 961px) {
+@media (min-width: 961px) {
   body {
     color: #414141;
     background-color: #EEEEEE;
