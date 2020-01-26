@@ -1,0 +1,194 @@
+body {
+  color: black;
+  background-color: #dedcd5;
+}
+
+.page {
+  font-size: 30px;
+  font-family:"Perpetua",serif;
+}
+
+.page h1 {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  background-color: #b8b5ad;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: #757266;
+  z-index: 1;
+}
+.menuitem {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+}
+.menuItem a {
+  margin: auto;
+  display: block;
+  color: black;
+  align-content: center;
+  text-decoration: none;
+}
+.menu li:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #757266;
+  font-size: 21px;
+}
+
+#menuSpace {
+  flex: 7;
+  margin: 3% 0%;
+}
+#menuSpace2 {
+  flex: .5;
+}
+
+#brandName {
+  font-family: "Brush Script MT", cursive;
+  font-size: 40px;
+  flex: 2;
+  text-align: center;
+}
+ .topSpacer {
+   margin-top: 110px;
+ }
+
+.footer {
+  text-align: center;
+  font-size: 18px;
+  font-family:"Perpetua",serif;
+}
+
+#background_image {
+  width: 100%;
+}
+
+
+.artistContent {
+  font-size: 50px;
+  color: #dedcd5;
+  text-align: right;
+  position: relative;
+  bottom: 950px;
+  right: 30px;
+  margin-left: 30px;
+}
+
+
+.artistContent h2 {
+  color: black;
+}
+
+
+.grid {
+  display: grid;
+  grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+}
+
+.gridImage {
+  display: flex;
+}
+
+.gridImage img {
+  align-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+
+.bodySplit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.leftSide {
+  width: 100%;
+  flex: 1;
+  background-color: #b8b5ad;
+  margin: 0% 1%;
+  font-size: 30px;
+}
+.leftSide ul {
+  margin-left: 10%;
+}
+.leftSide h3{
+  text-align: center;
+  font-size: 50px;
+}
+
+.reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-right: 5%;
+}
+
+.comment {
+  width: 100%;
+  background-color: #b8b5ad;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #757266;
+  margin: 2% 5%;
+}
+
+.commentText {
+  font-size: 24px;
+  font-family: "Brush Script MT",cursive;
+  overflow: hidden;
+}
+
+.pfp img{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 1%;
+}
+
+.rating {
+  margin: auto;
+  font-style: italic;
+  overflow: hidden;
+}
+
+.yepip {
+  margin: 0% 30%;
+}
+
+#yepip_img1 {
+  float:left;
+  width: 25%;
+  margin-left: 3%;
+  margin-top: 9.5%;
+}
+#yepip_img2 {
+  float:right;
+  width: 25%;
+  margin-right: 3%;
+  margin-top: 19.6%;
+}
