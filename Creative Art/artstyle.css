@@ -42,16 +42,23 @@ body {
   margin: 0 -3% 0 -3%;
 }
 #searchbar {
-  color: #e4eded;
+  color: white;
   background-color: #030f21;
   flex: 5;
-  border-style: solid;
-  border-color: #575e5e;
   border-width: 1px;
   width: 100%;
   padding: .6%;
   margin: auto;
+  border-style: none;
+  border-bottom: solid;
+  border-color: #16dede;
+  font-family: upgrade, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  outline: none;
 }
+
 #space {
   flex: 1;
   width: 100%;
@@ -230,4 +237,177 @@ body {
   position: relative;
   bottom: 0;
   text-align: center;
+}
+
+
+
+
+
+
+
+
+/* PAGE Login */
+
+.FloatingLogo a{
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  font-family: six-hands-brush, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.FloatingBox, .FloatingBox2 {
+  display: flex;
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  left:0;
+  margin: auto;
+  background-color: white;
+  color: black;
+  align-content: space-between;
+  flex-direction: column;
+  box-shadow: 0 0 30px #16dede, 0 0 10px white;
+}
+
+.FloatingBox2 {
+  padding: 0% 0% 0% 0%;
+  height: 100%;
+}
+
+.BoxBackround img{
+  width: 100%;
+  margin-bottom: -30%;
+}
+
+.LoginBox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 5%;
+}
+
+.LoginBox h2, .SignUpBox h2{
+  font-size: 30px;
+  color: #16dede;
+  margin: 0% 0 2% 0;
+}
+
+.SignUpBox input, .LoginBox input{
+  border-style: none;
+  border-bottom: solid;
+  border-color: #16dede;
+  width: 70%;
+  padding: 1% 0 .5% 0;
+  font-family: upgrade, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: black;
+  outline: none;
+}
+
+.SignUpBox {
+  margin: 0% 15%;
+}
+
+
+.buttonSpread {
+  margin-top: 1%;
+  display: flex;
+}
+
+.signInButton {
+  text-align: center;
+  min-width: 26%;
+  padding: 1% 2%;
+  background-color: #16dede;
+  color: black;
+  font-family: upgrade, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.buttonspacing {
+  min-width: 5%;
+}
+
+.smallDetail {
+  font-family: upgrade, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  color: #575e5e;
+  margin-left: 2%;
+}
+
+.alreadyAccount {
+  text-align: center;
+  font-family: upgrade, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: black;
+}
+
+.Favorites {
+  color: white;
+  text-align: center;
+  text-align: center;
+  font-family: upgrade, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Favorites h1 {
+  font-family: six-hands-brush, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.Favorites h2 {
+  font-size: 25px;
+}
+
+.favoriteGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.favoriteBox {
+  height: 400px;
+  width: 300px;
+  margin: 50px 30px;
+  border-style: solid;
+  border-color: #575e5e;
+  border-width: 3px;
+  background-color: #575e5e;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+}
+.favImageBox {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+}
+
+.favoriteBox img {
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: cover;
 }
