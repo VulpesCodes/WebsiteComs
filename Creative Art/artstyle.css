@@ -1,413 +1,1276 @@
-body {
-  background-color: #030f21;
-  color: #e4eded;
+@media only screen and (max-width: 800px) {
+
+
+  body {
+    background-color: #030f21;
+    color: #e4eded;
+  }
+  .page {
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    border-bottom: solid;
+    border-color: #575e5e;
+    border-width: 3px;
+    justify-content: space-between;
+    background-color: #030f21;
+    flex-direction: column;
+  }
+
+  .menutab {
+    display: block;
+    background-color: #030f21;
+  }
+  #logo {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex: 2;
+    text-align: center;
+    height: 100%;
+    display: block;
+    background-color: #030f21;
+    margin: 0 -3% 0 -3%;
+  }
+  #searchbar {
+    color: white;
+    background-color: #030f21;
+    flex: 5;
+    border-width: 1px;
+    width: 50%;
+    padding: .6%;
+    margin: auto;
+    border-style: none;
+    border-bottom: solid;
+    border-color: #16dede;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    outline: none;
+    margin: auto;
+  }
+
+  #space {
+    flex: 1;
+    width: 100%;
+  }
+  #login {
+    flex: .7;
+    font-size: 23px;
+    margin: 1%;
+    padding: .2%;
+    text-align: center;
+    background-color: #16dede;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #030f21;
+    border-radius: 10px;
+    color: black;
+    vertical-align: middle;
+    width: 200px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  #login:hover {
+    flex: .7;
+    margin: 1%;
+    padding: .2%;
+    text-align: center;
+    background-color: #1db5b5;
+    text-decoration: none;
+    border-style: inset;
+    border-color: #575e5e;
+    border-radius: 15px;
+    vertical-align: middle;
+    width: 200px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+
+  .background {
+    display: flex;
+      margin: 0% 0% -8% 0% ;
+  }
+
+  #background {
+    width: 100%;
+  }
+
+  .bgtext {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    position: absolute;
+    float: right;
+    top: 80px;
+    left: 40px;
+    z-index: 1;
+    color: white;
+    visibility: hidden;
+  }
+
+  .menu2 {
+    display: flex;
+    position: sticky;
+    top: 8%;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #16dede;
+    border-width: 1px;
+    justify-content: space-between;
+    background-color: #030f21;
+  }
+
+  .dropdown {
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    text-align: left;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #16dede;
+    padding: 14px 18px;
+    min-width: 160px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-right: solid;
+    border-left: solid;
+    border-color: #16dede;
+    border-width: 1px;
+  }
+
+  .dropdown:hover .dropbtn {
+    padding: 14px 19px;
+    background-color: #16dede;
+    color: black;
+    border: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #575e5e;
+    color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .leftside {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .favorites, .submit {
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 30px;
+    min-width: 80px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-decoration: none;
+  }
+  .submit {
+    border-right: solid;
+    border-color: #16dede;
+  }
+
+  .favorites:hover, .submit:hover {
+    color: #16dede;
+  }
+
+  .imageGrid {
+    background-color: #030f21;
+    column-count: 5;
+  }
+
+  .item {
+    display: inline-block;
+    width: 100%;
+    margin: 1% 0%;
+  }
+
+  .item img{
+    width: 100%;
+  }
+
+  .bottombar {
+    position: relative;
+    margin: -10% 0%;
+    padding: 10% 50%;
+    background-color: #030f21;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+  /* PAGE Login */
+
+  .FloatingLogo a{
+    position: absolute;
+    top: 4%;
+    left: 35%;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #030f21;
+    text-decoration: none;
+    visibility: none;
+  }
+
+  .FloatingBox, .FloatingBox2 {
+    display: flex;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    margin: auto;
+    background-color: white;
+    color: black;
+    align-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 30px #16dede, 0 0 10px white;
+  }
+
+  .FloatingBox2 {
+    padding: 0% 0% 0% 0%;
+    height: 100%;
+  }
+
+  .BoxBackround img{
+    width: 100%;
+    margin-bottom: -30%;
+  }
+
+  .LoginBox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5%;
+  }
+
+  .LoginBox h2, .SignUpBox h2{
+    font-size: 30px;
+    color: #16dede;
+    margin: 0% 0 2% 0;
+  }
+
+  .SignUpBox input, .LoginBox input{
+    border-style: none;
+    border-bottom: solid;
+    border-color: #16dede;
+    width: 70%;
+    padding: 1% 0 .5% 0;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    outline: none;
+  }
+
+  .SignUpBox {
+    margin: 0% 15%;
+  }
+
+
+  .buttonSpread {
+    margin-top: 1%;
+    display: flex;
+  }
+
+  .signInButton {
+    text-align: center;
+    min-width: 26%;
+    padding: 1% 2%;
+    background-color: #16dede;
+    color: black;
+    font-family: upgrade, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .buttonspacing {
+    min-width: 5%;
+  }
+
+  .smallDetail {
+    font-family: upgrade, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10px;
+    color: #575e5e;
+    margin-left: 2%;
+  }
+
+  .alreadyAccount {
+    text-align: center;
+    font-family: upgrade, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+  }
+
+  .Favorites {
+    color: white;
+    text-align: center;
+    text-align: center;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .Favorites h1 {
+    padding-top: 100px;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+  }
+
+  .Favorites h2 {
+    font-size: 25px;
+  }
+
+  .favoriteGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .favoriteBox {
+    height: 400px;
+    width: 300px;
+    margin: 50px 30px;
+    border-style: solid;
+    border-color: #575e5e;
+    border-width: 3px;
+    background-color: #575e5e;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+  }
+  .favImageBox {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  .favoriteBox img {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
-.page {
-  font-family: upgrade, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+
+  body {
+    background-color: #030f21;
+    color: #e4eded;
+  }
+  .page {
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    border-bottom: solid;
+    border-color: #575e5e;
+    border-width: 3px;
+    justify-content: space-between;
+    background-color: #030f21;
+    flex-direction: column;
+  }
+
+  .menutab {
+    display: block;
+    background-color: #030f21;
+  }
+  #logo {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex: 2;
+    text-align: center;
+    height: 100%;
+    display: block;
+    background-color: #030f21;
+    margin: 0 -3% 0 -3%;
+  }
+  #searchbar {
+    color: white;
+    background-color: #030f21;
+    flex: 5;
+    border-width: 1px;
+    width: 50%;
+    padding: .6%;
+    margin: auto;
+    border-style: none;
+    border-bottom: solid;
+    border-color: #16dede;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    outline: none;
+    margin: auto;
+  }
+
+  #space {
+    flex: 1;
+    width: 100%;
+  }
+  #login {
+    flex: .7;
+    font-size: 23px;
+    margin: 1%;
+    padding: .2%;
+    text-align: center;
+    background-color: #16dede;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #030f21;
+    border-radius: 10px;
+    color: black;
+    vertical-align: middle;
+    width: 200px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  #login:hover {
+    flex: .7;
+    margin: 1%;
+    padding: .2%;
+    text-align: center;
+    background-color: #1db5b5;
+    text-decoration: none;
+    border-style: inset;
+    border-color: #575e5e;
+    border-radius: 15px;
+    vertical-align: middle;
+    width: 200px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+
+  .background {
+    display: flex;
+      margin: 0% 0% -8% 0% ;
+  }
+
+  #background {
+    width: 100%;
+  }
+
+  .bgtext {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    position: absolute;
+    float: right;
+    top: 80px;
+    left: 40px;
+    z-index: 1;
+    color: white;
+    visibility: hidden;
+  }
+
+  .menu2 {
+    display: flex;
+    position: sticky;
+    top: 8%;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #16dede;
+    border-width: 1px;
+    justify-content: space-between;
+    background-color: #030f21;
+  }
+
+  .dropdown {
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    text-align: left;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #16dede;
+    padding: 14px 18px;
+    min-width: 160px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-right: solid;
+    border-left: solid;
+    border-color: #16dede;
+    border-width: 1px;
+  }
+
+  .dropdown:hover .dropbtn {
+    padding: 14px 19px;
+    background-color: #16dede;
+    color: black;
+    border: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #575e5e;
+    color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .leftside {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .favorites, .submit {
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 30px;
+    min-width: 80px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-decoration: none;
+  }
+  .submit {
+    border-right: solid;
+    border-color: #16dede;
+  }
+
+  .favorites:hover, .submit:hover {
+    color: #16dede;
+  }
+
+  .imageGrid {
+    background-color: #030f21;
+    column-count: 5;
+  }
+
+  .item {
+    display: inline-block;
+    width: 100%;
+    margin: 1% 0%;
+  }
+
+  .item img{
+    width: 100%;
+  }
+
+  .bottombar {
+    position: relative;
+    margin: -10% 0%;
+    padding: 10% 50%;
+    background-color: #030f21;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+  /* PAGE Login */
+
+  .FloatingLogo a{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .FloatingBox, .FloatingBox2 {
+    display: flex;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    margin: auto;
+    background-color: white;
+    color: black;
+    align-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 30px #16dede, 0 0 10px white;
+  }
+
+  .FloatingBox2 {
+    padding: 0% 0% 0% 0%;
+    height: 100%;
+  }
+
+  .BoxBackround img{
+    width: 100%;
+    margin-bottom: -30%;
+  }
+
+  .LoginBox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5%;
+  }
+
+  .LoginBox h2, .SignUpBox h2{
+    font-size: 30px;
+    color: #16dede;
+    margin: 0% 0 2% 0;
+  }
+
+  .SignUpBox input, .LoginBox input{
+    border-style: none;
+    border-bottom: solid;
+    border-color: #16dede;
+    width: 70%;
+    padding: 1% 0 .5% 0;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    outline: none;
+  }
+
+  .SignUpBox {
+    margin: 0% 15%;
+  }
+
+
+  .buttonSpread {
+    margin-top: 1%;
+    display: flex;
+  }
+
+  .signInButton {
+    text-align: center;
+    min-width: 26%;
+    padding: 1% 2%;
+    background-color: #16dede;
+    color: black;
+    font-family: upgrade, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .buttonspacing {
+    min-width: 5%;
+  }
+
+  .smallDetail {
+    font-family: upgrade, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10px;
+    color: #575e5e;
+    margin-left: 2%;
+  }
+
+  .alreadyAccount {
+    text-align: center;
+    font-family: upgrade, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+  }
+
+  .Favorites {
+    color: white;
+    text-align: center;
+    text-align: center;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .Favorites h1 {
+    padding-top: 100px;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+  }
+
+  .Favorites h2 {
+    font-size: 25px;
+  }
+
+  .favoriteGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .favoriteBox {
+    height: 400px;
+    width: 300px;
+    margin: 50px 30px;
+    border-style: solid;
+    border-color: #575e5e;
+    border-width: 3px;
+    background-color: #575e5e;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+  }
+  .favImageBox {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  .favoriteBox img {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
 
-.menu {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  margin: 0;
-  border-bottom: solid;
-  border-color: #575e5e;
-  border-width: 3px;
-  justify-content: space-between;
-  background-color: #030f21;
-}
-
-.menutab {
-  display: block;
-  background-color: #030f21;
-}
-#logo {
-  font-family: six-hands-brush, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  color: white;
-  text-decoration: none;
-  flex: 2;
-  text-align: center;
-  height: 100%;
-  display: block;
-  background-color: #030f21;
-  margin: 0 -3% 0 -3%;
-}
-#searchbar {
-  color: white;
-  background-color: #030f21;
-  flex: 5;
-  border-width: 1px;
-  width: 100%;
-  padding: .6%;
-  margin: auto;
-  border-style: none;
-  border-bottom: solid;
-  border-color: #16dede;
-  font-family: upgrade, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  outline: none;
-}
-
-#space {
-  flex: 1;
-  width: 100%;
-}
-#login {
-  flex: .7;
-  font-size: 23px;
-  margin: 1%;
-  padding: .2%;
-  text-align: center;
-  background-color: #16dede;
-  text-decoration: none;
-  border-style: solid;
-  border-color: #030f21;
-  border-radius: 10px;
-  color: black;
-  vertical-align: middle;
-}
-
-#login:hover {
-  flex: .7;
-  margin: 1%;
-  padding: .2%;
-  text-align: center;
-  background-color: #1db5b5;
-  text-decoration: none;
-  border-style: inset;
-  border-color: #575e5e;
-  border-radius: 15px;
-  vertical-align: middle;
-
-}
+@media only screen and (min-width: 1200px) {
 
 
-.background {
-  display: flex;
-    margin: -10% 0% -8% 0% ;
-}
+  body {
+    background-color: #030f21;
+    color: #e4eded;
+  }
+  .page {
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-#background {
-  width: 100%;
-}
+  .menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    border-bottom: solid;
+    border-color: #575e5e;
+    border-width: 3px;
+    justify-content: space-between;
+    background-color: #030f21;
+  }
 
-.bgtext {
-  font-family: six-hands-brush, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  position: absolute;
-  float: right;
-  top: 80px;
-  left: 40px;
-  z-index: 1;
-  color: white;
-}
+  .menutab {
+    display: block;
+    background-color: #030f21;
+  }
+  #logo {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex: 2;
+    text-align: center;
+    height: 100%;
+    display: block;
+    background-color: #030f21;
+    margin: 0 -3% 0 -3%;
+  }
+  #searchbar {
+    color: white;
+    background-color: #030f21;
+    flex: 5;
+    border-width: 1px;
+    width: 100%;
+    padding: .6%;
+    margin: auto;
+    border-style: none;
+    border-bottom: solid;
+    border-color: #16dede;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    outline: none;
+  }
 
-.menu2 {
-  display: flex;
-  position: sticky;
-  top: 8%;
-  width: 100%;
-  z-index: 1;
-  margin: 0;
-  border-top: solid;
-  border-bottom: solid;
-  border-color: #16dede;
-  border-width: 1px;
-  justify-content: space-between;
-  background-color: #030f21;
-}
+  #space {
+    flex: 1;
+    width: 100%;
+  }
+  #login {
+    flex: .7;
+    font-size: 23px;
+    margin: 1%;
+    padding: .2%;
+    text-align: center;
+    background-color: #16dede;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #030f21;
+    border-radius: 10px;
+    color: black;
+    vertical-align: middle;
+  }
 
-.dropdown {
-  overflow: hidden;
-}
+  #login:hover {
+    flex: .7;
+    margin: 1%;
+    padding: .2%;
+    text-align: center;
+    background-color: #1db5b5;
+    text-decoration: none;
+    border-style: inset;
+    border-color: #575e5e;
+    border-radius: 15px;
+    vertical-align: middle;
 
-.dropdown .dropbtn {
-  text-align: left;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: #16dede;
-  padding: 14px 18px;
-  min-width: 160px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  border-right: solid;
-  border-left: solid;
-  border-color: #16dede;
-  border-width: 1px;
-}
-
-.dropdown:hover .dropbtn {
-  padding: 14px 19px;
-  background-color: #16dede;
-  color: black;
-  border: none;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #575e5e;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.leftside {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.favorites, .submit {
-  text-align: center;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 30px;
-  min-width: 80px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  text-decoration: none;
-}
-.submit {
-  border-right: solid;
-  border-color: #16dede;
-}
-
-.favorites:hover, .submit:hover {
-  color: #16dede;
-}
-
-.imageGrid {
-  background-color: #030f21;
-  column-count: 5;
-}
-
-.item {
-  display: inline-block;
-  width: 100%;
-  margin: 1% 0%;
-}
-
-.item img{
-  width: 100%;
-}
-
-.bottombar {
-  position: relative;
-  margin: -10% 0%;
-  padding: 10% 50%;
-  background-color: #030f21;
-}
-
-.footer {
-  position: relative;
-  bottom: 0;
-  text-align: center;
-}
+  }
 
 
+  .background {
+    display: flex;
+      margin: -10% 0% -8% 0% ;
+  }
+
+  #background {
+    width: 100%;
+  }
+
+  .bgtext {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    position: absolute;
+    float: right;
+    top: 80px;
+    left: 40px;
+    z-index: 1;
+    color: white;
+  }
+
+  .menu2 {
+    display: flex;
+    position: sticky;
+    top: 8%;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #16dede;
+    border-width: 1px;
+    justify-content: space-between;
+    background-color: #030f21;
+  }
+
+  .dropdown {
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    text-align: left;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #16dede;
+    padding: 14px 18px;
+    min-width: 160px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-right: solid;
+    border-left: solid;
+    border-color: #16dede;
+    border-width: 1px;
+  }
+
+  .dropdown:hover .dropbtn {
+    padding: 14px 19px;
+    background-color: #16dede;
+    color: black;
+    border: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #575e5e;
+    color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .leftside {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .favorites, .submit {
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 30px;
+    min-width: 80px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-decoration: none;
+  }
+  .submit {
+    border-right: solid;
+    border-color: #16dede;
+  }
+
+  .favorites:hover, .submit:hover {
+    color: #16dede;
+  }
+
+  .imageGrid {
+    background-color: #030f21;
+    column-count: 5;
+  }
+
+  .item {
+    display: inline-block;
+    width: 100%;
+    margin: 1% 0%;
+  }
+
+  .item img{
+    width: 100%;
+  }
+
+  .bottombar {
+    position: relative;
+    margin: -10% 0%;
+    padding: 10% 50%;
+    background-color: #030f21;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  }
 
 
 
 
 
 
-/* PAGE Login */
-
-.FloatingLogo a{
-  position: absolute;
-  top: 4%;
-  left: 5%;
-  font-family: six-hands-brush, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  color: white;
-  text-decoration: none;
-}
-
-.FloatingBox, .FloatingBox2 {
-  display: flex;
-  width: 50%;
-  height: 70%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right:0;
-  left:0;
-  margin: auto;
-  background-color: white;
-  color: black;
-  align-content: space-between;
-  flex-direction: column;
-  box-shadow: 0 0 30px #16dede, 0 0 10px white;
-}
-
-.FloatingBox2 {
-  padding: 0% 0% 0% 0%;
-  height: 100%;
-}
-
-.BoxBackround img{
-  width: 100%;
-  margin-bottom: -30%;
-}
-
-.LoginBox {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 5%;
-}
-
-.LoginBox h2, .SignUpBox h2{
-  font-size: 30px;
-  color: #16dede;
-  margin: 0% 0 2% 0;
-}
-
-.SignUpBox input, .LoginBox input{
-  border-style: none;
-  border-bottom: solid;
-  border-color: #16dede;
-  width: 70%;
-  padding: 1% 0 .5% 0;
-  font-family: upgrade, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  color: black;
-  outline: none;
-}
-
-.SignUpBox {
-  margin: 0% 15%;
-}
 
 
-.buttonSpread {
-  margin-top: 1%;
-  display: flex;
-}
+  /* PAGE Login */
 
-.signInButton {
-  text-align: center;
-  min-width: 26%;
-  padding: 1% 2%;
-  background-color: #16dede;
-  color: black;
-  font-family: upgrade, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-decoration: none;
-  font-size: 16px;
-}
+  .FloatingLogo a{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+  }
 
-.buttonspacing {
-  min-width: 5%;
-}
+  .FloatingBox, .FloatingBox2 {
+    display: flex;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    margin: auto;
+    background-color: white;
+    color: black;
+    align-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 30px #16dede, 0 0 10px white;
+  }
 
-.smallDetail {
-  font-family: upgrade, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 10px;
-  color: #575e5e;
-  margin-left: 2%;
-}
+  .FloatingBox2 {
+    padding: 0% 0% 0% 0%;
+    height: 100%;
+  }
 
-.alreadyAccount {
-  text-align: center;
-  font-family: upgrade, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px;
-  color: black;
-}
+  .BoxBackround img{
+    width: 100%;
+    margin-bottom: -30%;
+  }
 
-.Favorites {
-  color: white;
-  text-align: center;
-  text-align: center;
-  font-family: upgrade, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  .LoginBox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5%;
+  }
 
-.Favorites h1 {
-  font-family: six-hands-brush, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 80px;
-}
+  .LoginBox h2, .SignUpBox h2{
+    font-size: 30px;
+    color: #16dede;
+    margin: 0% 0 2% 0;
+  }
 
-.Favorites h2 {
-  font-size: 25px;
-}
+  .SignUpBox input, .LoginBox input{
+    border-style: none;
+    border-bottom: solid;
+    border-color: #16dede;
+    width: 70%;
+    padding: 1% 0 .5% 0;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    outline: none;
+  }
 
-.favoriteGrid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-}
+  .SignUpBox {
+    margin: 0% 15%;
+  }
 
-.favoriteBox {
-  height: 400px;
-  width: 300px;
-  margin: 50px 30px;
-  border-style: solid;
-  border-color: #575e5e;
-  border-width: 3px;
-  background-color: #575e5e;
-  overflow: hidden;
-  text-decoration: none;
-  color: white;
-}
-.favImageBox {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  width: 300px;
-}
 
-.favoriteBox img {
-  max-width: 500px;
-  max-height: 500px;
-  object-fit: cover;
+  .buttonSpread {
+    margin-top: 1%;
+    display: flex;
+  }
+
+  .signInButton {
+    text-align: center;
+    min-width: 26%;
+    padding: 1% 2%;
+    background-color: #16dede;
+    color: black;
+    font-family: upgrade, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .buttonspacing {
+    min-width: 5%;
+  }
+
+  .smallDetail {
+    font-family: upgrade, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10px;
+    color: #575e5e;
+    margin-left: 2%;
+  }
+
+  .alreadyAccount {
+    text-align: center;
+    font-family: upgrade, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+  }
+
+  .Favorites {
+    color: white;
+    text-align: center;
+    text-align: center;
+    font-family: upgrade, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .Favorites h1 {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+  }
+
+  .Favorites h2 {
+    font-size: 25px;
+  }
+
+  .favoriteGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .favoriteBox {
+    height: 400px;
+    width: 300px;
+    margin: 50px 30px;
+    border-style: solid;
+    border-color: #575e5e;
+    border-width: 3px;
+    background-color: #575e5e;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+  }
+  .favImageBox {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  .favoriteBox img {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
